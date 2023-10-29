@@ -13,6 +13,12 @@
 		9178092D2ADD22FB00EF520F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9178092B2ADD22FB00EF520F /* Main.storyboard */; };
 		9178092F2ADD22FC00EF520F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9178092E2ADD22FC00EF520F /* Assets.xcassets */; };
 		917809322ADD22FC00EF520F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917809302ADD22FC00EF520F /* LaunchScreen.storyboard */; };
+		9178093A2ADFCFFC00EF520F /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917809392ADFCFFC00EF520F /* CustomAlertView.swift */; };
+		917ED7112AEB64A000F988B3 /* ReusableAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ED70F2AEB64A000F988B3 /* ReusableAlertViewController.swift */; };
+		917ED7122AEB64A000F988B3 /* ReusableAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917ED7102AEB64A000F988B3 /* ReusableAlertViewController.xib */; };
+		917ED7172AEB6B9500F988B3 /* ReusableAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ED7162AEB6B9500F988B3 /* ReusableAlertView.swift */; };
+		917ED7192AEB6BA900F988B3 /* ReusableAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917ED7182AEB6BA900F988B3 /* ReusableAlertView.xib */; };
+		917ED71B2AEB6C6D00F988B3 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ED71A2AEB6C6D00F988B3 /* CustomBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		9178092E2ADD22FC00EF520F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917809312ADD22FC00EF520F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917809332ADD22FC00EF520F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917809392ADFCFFC00EF520F /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		917ED70F2AEB64A000F988B3 /* ReusableAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableAlertViewController.swift; sourceTree = "<group>"; };
+		917ED7102AEB64A000F988B3 /* ReusableAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableAlertViewController.xib; sourceTree = "<group>"; };
+		917ED7162AEB6B9500F988B3 /* ReusableAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableAlertView.swift; sourceTree = "<group>"; };
+		917ED7182AEB6BA900F988B3 /* ReusableAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableAlertView.xib; sourceTree = "<group>"; };
+		917ED71A2AEB6C6D00F988B3 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,42 @@
 				917809252ADD22FB00EF520F /* AppDelegate.swift */,
 				917809272ADD22FB00EF520F /* SceneDelegate.swift */,
 				917809292ADD22FB00EF520F /* ViewController.swift */,
+				917809392ADFCFFC00EF520F /* CustomAlertView.swift */,
 				9178092B2ADD22FB00EF520F /* Main.storyboard */,
+				917ED7132AEB64AC00F988B3 /* Customized */,
 				9178092E2ADD22FC00EF520F /* Assets.xcassets */,
 				917809302ADD22FC00EF520F /* LaunchScreen.storyboard */,
 				917809332ADD22FC00EF520F /* Info.plist */,
 			);
 			path = TestProject;
+			sourceTree = "<group>";
+		};
+		917ED7132AEB64AC00F988B3 /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				917ED7152AEB6B6E00F988B3 /* View */,
+				917ED7142AEB6B6300F988B3 /* Controller */,
+			);
+			path = Customized;
+			sourceTree = "<group>";
+		};
+		917ED7142AEB6B6300F988B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				917ED70F2AEB64A000F988B3 /* ReusableAlertViewController.swift */,
+				917ED7102AEB64A000F988B3 /* ReusableAlertViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		917ED7152AEB6B6E00F988B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				917ED71A2AEB6C6D00F988B3 /* CustomBottomView.swift */,
+				917ED7162AEB6B9500F988B3 /* ReusableAlertView.swift */,
+				917ED7182AEB6BA900F988B3 /* ReusableAlertView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917ED7192AEB6BA900F988B3 /* ReusableAlertView.xib in Resources */,
 				917809322ADD22FC00EF520F /* LaunchScreen.storyboard in Resources */,
 				9178092F2ADD22FC00EF520F /* Assets.xcassets in Resources */,
+				917ED7122AEB64A000F988B3 /* ReusableAlertViewController.xib in Resources */,
 				9178092D2ADD22FB00EF520F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917ED7112AEB64A000F988B3 /* ReusableAlertViewController.swift in Sources */,
 				9178092A2ADD22FB00EF520F /* ViewController.swift in Sources */,
+				917ED71B2AEB6C6D00F988B3 /* CustomBottomView.swift in Sources */,
+				917ED7172AEB6B9500F988B3 /* ReusableAlertView.swift in Sources */,
 				917809262ADD22FB00EF520F /* AppDelegate.swift in Sources */,
+				9178093A2ADFCFFC00EF520F /* CustomAlertView.swift in Sources */,
 				917809282ADD22FB00EF520F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
